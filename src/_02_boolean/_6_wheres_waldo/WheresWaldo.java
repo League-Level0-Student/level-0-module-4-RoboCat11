@@ -25,11 +25,11 @@ import processing.core.PImage;
  *   4. Resize your image to the size of the window using the resize() method.
  * 
  *   5. Set your Waldo image as the window's background.
- * 
+ * 	 
  * In the draw() method:
  *   6. Find the range of X and Y coordinates of Waldo in the image. You can
  *      use the following code to help you:
- *      println("X: " + mouseX + " Y: " + mouseY);
+ *     
  * 
  *   7. Use an if statement to check if the user clicked the mouse
  * 
@@ -40,22 +40,31 @@ import processing.core.PImage;
 public class WheresWaldo extends PApplet {
     static final int WIDTH = 600;
     static final int HEIGHT = 400;
-
+    	int waldoTopLeftX = 948;
+    	int waldoTopLeftY = 13;
+    	int waldoBottomRightX = 970;
+    	int waldoBottomRightY = 39;
     PImage waldo;
 
     @Override
     public void settings() {
-        size(WIDTH, HEIGHT);
+        size(1198, 665);
     }
-
+    
     @Override
     public void setup() {
-        
+    waldo = loadImage("Waldo.png");
+    background(waldo);
     }
 
     @Override
     public void draw() {
-        
+    	
+    	if(mousePressed) {
+   if(mouseX>waldoTopLeftX && mouseX<waldoBottomRightX && mouseY>155 && mouseY<4) {
+	   
+   }
+    	}
     }
 
     static public void main(String[] args) {
