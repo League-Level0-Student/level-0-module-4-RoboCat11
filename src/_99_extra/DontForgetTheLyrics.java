@@ -18,15 +18,15 @@ public class DontForgetTheLyrics {
 	
 	public static void main(String[] args) {
 		// 4. Make a pop-up to explain the game.
-
+		
 		// 5. Use the playSound method to play your song.
-
+		
 		// 6. Make a pop-up for the player to type their answer.
-
+		
 		// 7. If they answered correctly, tell them that they were right.
-
+		
 		// 8. Otherwise, tell them they are wrong, and give them the answer.
-
+		
 		// 9. Record another sound and repeat steps 5-8.
 
 		// 10. [optional] Add a points variable that will calculate their final score.
